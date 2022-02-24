@@ -441,10 +441,10 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return '试着好好练一下？';
-        if (cps <= 8) return 'TCL';
-        if (cps <= 10)  return 'TQL';
-        if (cps <= 15) return '您';
+        if (cps <= 50) return '顺顺叫你再试一次';
+        if (cps <= 100) return '顺顺对你说别气馁';
+        if (cps <= 125)  return '顺顺开心';
+        if (cps <= 150) return '顺顺爱你';
         return '人？';
     }
 
